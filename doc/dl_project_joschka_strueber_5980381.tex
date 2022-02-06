@@ -7,6 +7,7 @@
 % ready for submission
 \usepackage[preprint]{neurips_2021}
 
+
 % to compile a preprint version, e.g., for submission to arXiv, add add the
 % [preprint] option:
 %     \usepackage[preprint]{neurips_2021}
@@ -26,8 +27,11 @@
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
 \usepackage{xcolor}         % colors
+\usepackage{graphicx}       % graphics
+\usepackage{lipsum}
 
-\title{Predicting Acceptance Probabilities\\ from Trivial Features}
+
+\title{Predicting Excess Mortality during the Covid 19 Pandemic via Demographic Features}
 
 % The \author macro works with any number of authors. There are two commands
 % used to separate the names and addresses of multiple authors: \And and \AND.
@@ -38,13 +42,9 @@
 % \AND instead of \And before the third author name.
 
 \author{%
-  Philipp Hennig\\
-  Matrikelnummer 123456789\\
-  \texttt{philipp.hennig@uni-tuebingen.de} \\
-  \And
-  Jakob Macke\\
-  Matrikelnummer 987654321\\
-  \texttt{dummymail@uni-tuebingen.de} \\
+  Joschka Strüber\\
+  Matrikelnummer 5980381\\
+  \texttt{joschka.strueber@student.uni-tuebingen.de}
 }
 
 \begin{document}
@@ -52,9 +52,49 @@
 \maketitle
 
 \begin{abstract}
-  \emph{[Use this abstract to briefly explain what you are planning to do. Here is an example:]} We are planning to use the collection of \href{https://openreview-py.readthedocs.io/en/latest/getting_data.html}{all papers ever \emph{submitted} to the ICLR conference} to see how well paper acceptance can be predicted from trivial features, such as the paper's overall length, number of words or number of figures. We are planning to use logistic regression for this purpose.
+  We are planning to use the collection of \href{https://github.com/owid/covid-19-data}{Covid 19 data from Our World in Data} to test the statistical significance of excess mortality since the emergence of Covid compared to previous years. Furthermore, we want to use linear regression to examine the influence of demographic and structural variables on mortality rates with a particular focus on vaccination rates.
 \end{abstract}
 
-You can find a detailed example and instructions on how to use this style file in the attached \texttt{neurip\_2021.tex} file. This includes instructions for how to lay out citations.
+\section{Introduction}
+
+\lipsum[1]
+
+\section{Excess mortality during the COVID-19 pandemic}
+
+\lipsum[2]
+\lipsum[3]
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.8\linewidth]{fig/fig_em_intro}
+	\caption[Blub]{text}
+\end{figure}
+
+\lipsum[2]
+
+\lipsum[3]
+
+\section{Demography as predictor of excess mortality}
+
+\lipsum[1]
+
+\begin{figure}[t]
+	\begin{minipage}{0.3\linewidth}
+		\includegraphics[width=\linewidth]{fig/fig_linear_regression_em}
+	\end{minipage}\hfill
+	\begin{minipage}{0.65\linewidth}
+		\includegraphics[width=\linewidth]{fig/fig_em_correlation}
+	\end{minipage}
+\end{figure}
+
+\lipsum[1]
+
+\section{The effect of vaccinations}
+
+\lipsum[1]
+
+\section{Conclusion}
+
+\lipsum[1]
 
 \end{document}
